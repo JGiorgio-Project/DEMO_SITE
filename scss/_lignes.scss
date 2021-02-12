@@ -1,0 +1,91 @@
+.line_h {
+  position: absolute;
+  z-index: 50;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: width 1s ease-in-out;
+}
+
+.lh1 {
+  top: 15%;
+  width: 0;
+  animation: animLineH 2s ease-in-out forwards;
+}
+
+.lh2 {
+  top: 85%;
+  width: 0;
+  animation: animLineH 2s ease-in-out forwards 1s;
+}
+
+.line_v {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: height 1s ease-in-out;
+}
+
+.lv1 {
+  left: 10%;
+  height: 0;
+  animation: animLignev100 2s ease-in-out forwards;
+}
+
+.lv2 {
+  left: 35%;
+  height: 0;
+  animation: animLignev85 2s ease-in-out forwards 0.5s;
+}
+
+.lv3 {
+  top: 15%;
+  left: 90%;
+  height: 0;
+  animation: animLignev70 2s ease-in-out forwards 1s;
+}
+
+.light {
+  position: absolute;
+  z-index: 50;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+}
+
+.light__1 {
+  @include sizing(2px, 20px);
+  top: 0;
+  left: 10%;
+  animation: lightMoveTop 8s linear infinite 2s;
+}
+
+.light__2 {
+  @include sizing(20px, 2px);
+  top: 15%;
+  left: 0%;
+  animation: lightMoveLeft 12s linear infinite 2s;
+}
+
+.light__3 {
+  @include sizing(20px, 2px);
+  top: 85%;
+  left: 0%;
+  animation: lightMoveLeft 12s linear reverse infinite 3s;
+}
+
+.light__4 {
+  @include sizing(2px, 20px);
+  bottom: 13.5%;
+  left: 35%;
+  animation: lightMoveBottom 8s linear infinite 2.5s;
+}
+
+.light__5 {
+  @include sizing(2px, 20px);
+  bottom: 13.5%;
+  left: 90%;
+  animation: lightMoveBottomMini 8s linear reverse infinite 3.5s;
+}

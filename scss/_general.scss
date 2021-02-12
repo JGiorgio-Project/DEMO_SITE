@@ -1,0 +1,19 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
+body {
+  @include sizing(100vw, 100vh);
+  color: white;
+  font-family: Lato-Regular;
+  background-color: #151515;
+}
+
+

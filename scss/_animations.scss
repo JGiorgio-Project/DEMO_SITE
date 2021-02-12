@@ -1,0 +1,150 @@
+@keyframes animLineH {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animLignev100 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes animLignev85 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 85%;
+  }
+}
+
+@keyframes animLignev70 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sectionOpen {
+  from {
+    clip-path: circle(0 at 62% 50%);
+  }
+  to {
+    clip-path: circle(90% at 62% 50%);
+  }
+}
+
+@keyframes sectionClose {
+  from {
+    clip-path: circle(90% at 62% 50%);
+  }
+  to {
+    clip-path: circle(0 at 62% 50%);
+  }
+}
+
+@keyframes appearDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes desappearUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes appearRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes desappearLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes lightMoveTop {
+  from {
+    opacity: 1;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 98%;
+  }
+}
+
+@keyframes lightMoveBottom {
+  from {
+    opacity: 1;
+    bottom: 13.5%;
+  }
+  to {
+    opacity: 1;
+    bottom: 100%;
+  }
+}
+
+@keyframes lightMoveBottomMini {
+  from {
+    opacity: 1;
+    bottom: 13.5%;
+  }
+  to {
+    opacity: 1;
+    bottom: 81%;
+  }
+}
+
+@keyframes lightMoveLeft {
+  from {
+    opacity: 1;
+    left: 0;
+  }
+  to {
+    opacity: 1;
+    left: 98%;
+  }
+}

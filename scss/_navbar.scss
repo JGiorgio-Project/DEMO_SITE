@@ -1,0 +1,32 @@
+.navBar {
+  @include sizing(66%, 100%);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  @include sizing(100%, 100%);
+  background-color: #000;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards 2s;
+}
+
+li {
+  @include centerFlex;
+  @include sizing(100%, 60%);
+  position: relative;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+  color: #aaa;
+}
+
+.lastLi {
+  border-right: none;
+}
